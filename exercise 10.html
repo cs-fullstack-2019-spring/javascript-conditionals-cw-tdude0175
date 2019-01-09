@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blackjack</title>
+</head>
+<body>
+<h1> Blackjack or bust?</h1>
+
+<script>
+    var card1 =parseInt(prompt("What was your first card?"));
+    var card2 = parseInt(prompt("How about your second?"));
+    var card3 = parseInt(prompt("And your final card?"));
+
+    if(card1 + card2 + card3 ===21)
+    {
+        console.log("Blackjack, congratulations");
+    }
+    else if(card1 + card2 + card3 >= 21)
+    {
+        console.log("Sorry, you bust");
+    }
+    else
+    {
+        console.log(card1 +card2 + card3 +" is your total.")
+    }
+
+</script>
+
+</body>
+</html>
